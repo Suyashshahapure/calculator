@@ -35,6 +35,7 @@ function Calculator() {
       <h1>React Calculator</h1>
 
       <input type="text" value={input} readOnly style={{ marginBottom: '10px', width: '240px', height: '40px', textAlign: 'right' }} />
+      <div> <p> {result}</p></div>
       <div style={{ padding: 20 }}>
         <div style={{ marginBottom: '10px' }}>
           <button onClick={() => handleInput('7')} style={{ marginRight: '10px', borderRadius: '5px', width: '60px', height: '60px' }}>7</button>
@@ -61,7 +62,7 @@ function Calculator() {
           <button onClick={() => handleInput('/')} style={{ borderRadius: '5px', width: '60px', height: '60px' }}>/</button>
         </div>
       </div>
-      <div>{result && <p>Result: {result}</p>}</div>
+
     </div>
   );
 }
